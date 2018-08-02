@@ -11,3 +11,38 @@ Por exemplo, ao criar uma <section> que servirá como uma amostragem contendo tre
 Tentar sempre utilizar a unidade de medida em ou %.
 
 Max-width e min-width são imprescindíveis para um website responsivo.
+
+--------------------------------------------------------------------------------------
+Media Queries
+
+-As media query são expressões que permitem que com as propriedades min-width e max-width você mude o estilo de exibição da página a partir do tamanho minimo ou máximo da tela em que a página esta sendo carregada. (Layout condicional)
+
+-Device-width e device-height são propriedades que funcionam pegando o tamanho e largura da tela do dispositivo em que estão rodando ao invés das dimensões do navegador.
+
+-Orientation (portrait e landscape) são utilizados para saber a orientação do dispositivo, se ele está na horizontal (landscape) ou na vertical (portrait)
+
+-Usa-se mais min-width pelo fato de clean code. Algumas situações onde as propriedades em css já são padrões para a visualização em telas maiores como o desktop, mostram que usa-se menos código caso você opte pelo uso do min width, pois a media query abordará as mudanças para as telas menores apenas.
+
+--------------------------------------------------------------------------------------
+Adaptações maiores do menu
+
+-A maioria dos websites responsivos possuem poucas diferenças entre suas versões desktop e mobile. Mas algumas dessas poucas mudanças podem possuir um grande valor pro que diz respeito ao aspecto natural da página, uma delas é o menu responsivo.
+
+-O menu responsivo muda quando há a necessidade de em uma tela menor, ele "se esconder" nas "três barrinhas" ao lado do cabeçalho, onde uma coluna sobrepõe o conteudo nos mostrando as opções de menu existentes
+--------------------------------------------------------------------------------------
+Imagens Responsivas
+
+-Ao trabalharmos com imagens, devemos ter o cuidado de selecionar os tamanhos ideais para cada tipo e tamanho de telas disponiveis no mercado. No entanto, isso não significa que teremos de programar diversos fotos para os diferentes tipos de tamanho, apenas precisaremos levar em consideração que ao redimensionar a imagem para cima (aumentando seu tamanho), a imagem sempre será pixelizada. A solução é encontrar o tamanho máximo ideal para redimensionarmos as imagens para baixo.
+
+-Para chegar nesse tamanho, temos algumas informações: 
+   pixel fisico: quantidade de pixel fisico que a tela possui. varia conforme o tamanho e resolução da tela, sendo as maiores e de alta definição com mais pixeis fisicos.
+   dip: pixel que colocamos no css, que independe do tamanho do dispositivo como o proprio nome indica (device independent pixel)
+   dpr: proporção utilizada para mostrar na tela (device pixel ratio)
+
+a conta que o navegador faz para mostrar a quantidade de pixel é: 
+	dpr = pixel fisico / dip
+
+
+
+
+
