@@ -1,0 +1,13 @@
+Principios do Design Responsivo:
+
+-Design fluido: utilização de medidas diferentes da medida px para a metrica dos componentes do site, como por exemplo, o uso da medida %, que se adapta às diferentes resoluções (medidas flexiveis)
+
+-Pensar em proporções do design para o desenvolvimento dos componentes ao invés de tamanhos fixos.
+
+
+Utiliza-se sempre as porcentagens para que os elementos do codigo escalonem de acordo com o tamanho da tela.
+Por exemplo, ao criar uma <section> que servirá como uma amostragem contendo tres colunas em uma linha, após determinar a altura dessa section (seu height) utilizamos o float: left + width: x% para determinar o tamanho da coluna dos elementos, que herdarão uma largura x+y do seu pai, se colocando em um container tambem.
+
+Tentar sempre utilizar a unidade de medida em ou %.
+
+Max-width e min-width são imprescindíveis para um website responsivo.
